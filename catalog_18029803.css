@@ -1,0 +1,517 @@
+/* 
+Contains the CSS data for the catalog_18029803.xml file
+*/
+
+/* Main  css styles for the entire xml page through root tag*/
+auto_dealers {
+  background-color: #191b27;
+  font-family: "Segoe UI";
+  color: rgb(238, 230, 230);
+}
+/*Style for displaying the logo image */
+logo{
+    background-image: url(./icon/logo.png);
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 180px;
+    display: block;
+ 
+}
+/* Style for displaying vehicles*/
+vehicle {
+    background-color: #272935;
+    display: block;
+    padding-top: 5%;
+    padding-left: 5%;
+    padding-bottom: 9%;
+    margin-top: 150px;
+    margin-left: 270px;
+    margin-right: 270px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border: 0.1px ;
+    border-radius: 15px;
+    color: white;
+}
+/* Styling for the brand */
+brand {
+    font-size: 30px;
+    display: block;
+    font-weight: bold;
+}
+/* Displays "Brand:" infront of the brand tag content every time*/
+brand::before {
+    content: "Brand: ";
+  }
+/* Styling fo the name of the vehicle */
+name {
+    color: rgba(245, 245, 245, 0.774);
+    font-size: 25px;
+    font-weight: 900;
+    display: block;
+    margin-top: 50px;
+}
+
+/* Styling for the displaying item number */
+item_number {
+    color: rgba(245, 245, 245, 0.774);
+    font-size: 18px;
+    display: block;
+    margin-top: 10px;
+    font-family: 'Segoe UI';
+}
+/* Displays "Item Number" every time before displayig item tagss content */
+item_number::before {
+    content: "Item Number: ";
+  }
+  /* Styling for displaying quantity*/
+  quantity {
+    color: rgba(245, 245, 245, 0.774);
+    font-size: 18px;
+    display: block;
+    margin-top: 10px;
+    font-family: 'Segoe UI';
+   
+/* Displays "Quantity" before displaying the content for the quantity tag */
+}
+quantity::before {
+    content: "Quantity: ";
+  }
+
+  /* Styling for the image for the vehicle id c01*/
+  #c01{
+    background-image: url(./car_image/c01.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: relative;
+    margin-top: -20%;
+    margin-left: 45%;
+    width: 500px;
+    height: 250px;
+    display: block ;
+  }
+   /* Styling for the image for the vehicle id c02*/
+  #c02{
+    background-image: url(./car_image/c02.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: relative;
+    margin-top: -20%;
+    margin-left: 45%;
+    width: 500px;
+    height: 250px;
+    display: block ;
+  }
+   /* Styling for the image for the vehicle id c03*/
+  #c03{
+    background-image: url(./car_image/c03.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: relative;
+    margin-top: -20%;
+    margin-left: 45%;
+    width: 500px;
+    height: 250px;
+    display: block ;
+  }
+   /* Styling for the image for the vehicle id c04*/
+  #c04{
+    background-image: url(./car_image/c04.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: relative;
+    margin-top: -20%;
+    margin-left: 45%;
+    width: 500px;
+    height: 250px;
+    display: block ;
+  }
+   /* Styling for the image for the vehicle id c05*/
+  #c05{
+    background-image: url(./car_image/c05.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: relative;
+    margin-top: -20%;
+    margin-left: 48%;
+    width: 500px;
+    height: 250px;
+    display: block ;
+  }
+  /* Styling for displaying description of the vehicle*/
+description {
+    color: rgba(245, 245, 245, 0.774);
+    font-size: 110%;
+    display: block;
+    margin-top: 50px;
+    padding-right: 5%;
+    align-content: center;
+}
+ /*Styling for displaying the engine information */
+engine{
+    background-color: #2d2f3d;
+    display: block; 
+    border: 1px double darkgray ;
+    margin-top: 5%;
+    color: white;
+    margin-right: 50px;
+    padding: 2%;
+    
+}
+ /* Styling for displaying the title for engine */
+engine_title{
+    color:rgba(245, 245, 245, 0.774);
+    font-weight: bold;
+    font-size: 25px;
+    display: block;
+    margin-top: 2px;
+    border: 5px solid #1f2230 ;
+    background-color:#1f2230 ;
+
+}
+ /* Styling for displaying car type */
+car_type {
+  font-size: 16px;
+  font-weight: bold;
+  display: block;
+  margin-top: 25px;
+  
+}
+ /* Displays "Type: " befor the content of the car_type tag */
+car_type::before {
+  content: "Type: ";
+}
+ /* Styling for the engine type */
+engine_type {
+  font-size: 16px;
+  font-weight: bold;
+  display: block;
+  margin-top: 8px;
+}
+/*Displays "Engine Type" before the content of the enginer_type tag */
+engine_type::before {
+  content: "Engine Type: ";
+}
+/* Styling to display cylinder no. */
+cylinder_no {
+  font-size: 16px;
+  font-weight: bold;
+  display: block;
+  margin-top: 8px;
+}
+/* Displys the attribute content after the content of the cylinder_no tag */
+cylinder_no::after{
+  content: " " attr(cylinder_type);
+}
+/* Displays "Number of cylinder" brefore the content of cylinder_no tag  */
+cylinder_no::before {
+  content: "Number of cylinder: ";
+}
+/* Styling for the cylinder capaicity */
+cylinder_capacity{
+  font-size: 16px;
+  font-weight: bold;
+  display: block;
+  margin-top: 8px;
+}
+/* Displays the attribute content before the content of the cylinder_capicity tag */
+cylinder_capacity::after{
+  content: " "attr(unit);
+}
+/* Displays "Cylinder capicity" before the content of the cylinder_capacity tag */
+cylinder_capacity::before {
+  content: "Cylinder capicity: ";
+}
+/* Styling for the turbo */
+turbo{
+  font-size: 16px;
+  font-weight: bold;
+  display: block;
+  margin-top: 8px;
+}
+/* Displays "Turbo: " before displaying the content of the turbo tag */
+turbo::before {
+  content: "Turbo: ";
+}
+/* Styling for the catalyst */
+catalyst{
+  font-size: 16px;
+  font-weight: bold;
+  display: block;
+  margin-top: 8px;
+}
+/* Displays "Catalysyt: " before the content of the catalyst tag */
+catalyst::before {
+  content: "Catalyst: ";
+}
+/* Styling for the tank  */
+tank{
+  font-size: 16px;
+  font-weight: bold;
+  display: block;
+  margin-top: 8px;
+}
+/* Displays the content of the attribute of the tank tag before its content */
+tank::after{
+  content: " "attr(unit);
+}
+/* Displays "Tank: " before displaying the content of the tank tag */
+tank::before {
+  content: "Tank: ";
+}
+/*Styling for displaying the power*/
+power{
+  font-size: 16px;
+  font-weight: bold;
+  display: block;
+  margin-top: 8px;
+}
+ /*Displaying "Power" before the content of the power tag */
+power::before {
+  content: "Power: ";
+}
+/*Displaying the power tags attribute before its content*/
+power::after {
+  content: " " attr(unit) ;
+}
+/* Styling for displaying the number of engine */
+number_of_engine{
+  font-size: 16px;
+  font-weight: bold;
+  display: block;
+  margin-top: 8px;
+}
+/* Displying "Number of engine" before the content of the number_of_engine tag */
+number_of_engine::before{
+  content: "Number of engine: ";
+}
+/* Styling for displaying the battery type */
+battery_type{
+  font-size: 16px;
+  font-weight: bold;
+  display: block;
+  margin-top: 8px;
+}
+/* Displays "Battery Type" before the contents of the battery_type tag*/
+battery_type::before{
+ content: "Battery Type: ";
+}
+/* Styling for displaying power consumption*/
+power_consumption{
+  font-size: 16px;
+  font-weight: bold;
+  display: block;
+  margin-top: 8px;
+}
+/* Displays "Power consumption" before power_consumption tag */
+power_consumption::before{
+  content: "Power consumption: ";
+}
+/* Styling for displaying performance*/
+performance{
+  background-color: #2d2f3d;
+  display: block; 
+  border: 1px double darkgray ;
+  margin-top: 5%;
+  color: white;
+  margin-right: 50px;
+  padding: 2%;
+}
+/* Styling for displaying performance title*/
+performance_title{
+  color:rgba(245, 245, 245, 0.774);
+  font-weight: bold;
+  font-size: 25px;
+  display: block;
+  margin-top: 2px;
+  border: 5px solid #1f2230 ;
+  background-color:#1f2230 ;
+}
+/* Styling for displaying transmission*/
+transmission{
+  font-size: 16px;
+  font-weight: bold;
+  display: block;
+  margin-top: 25px;
+}
+/* Displays "Transmission" before the transmission tag */
+transmission::before{
+  content: "Transmission: ";
+}
+/* Styling for displaying the top speed */
+top_speed{
+  font-size: 16px;
+  font-weight: bold;
+  display: block;
+  margin-top: 8px;
+}
+/* Displays "Top speed" before the content of the top_spped tag */
+top_speed::before{
+  content: "Top speed: ";
+}
+/* Displays the attribute contents before the content of the actual top_speed tag */
+top_speed::after{
+  content: " "attr(unit);
+}
+/* Styling for the acceleration */
+acceleration{
+  font-size: 16px;
+  font-weight: bold;
+  display: block;
+  margin-top: 8px;
+}
+/* Displays "Acceleration" before the acceleration tag */
+acceleration::before{
+  content: "Acceleration ("attr(in) "): ";
+}
+/* Displys the content of the attribute tag before the content of the actual acceleration tag */
+acceleration::after{
+  content: " "attr(unit);
+}
+/* Styling for displaying the energy label */
+energy_label{
+  font-size: 16px;
+  font-weight: bold;
+  display: block;
+  margin-top: 8px;
+}
+/* Displays "Energy label:" before the content of the energy_lbel tag */
+energy_label::before{
+  content: "Energy label: ";
+}
+/* Styling for displaying the contents of other detail */
+other_detail {
+  background-color: #2d2f3d;
+  display: block; 
+  border: 1px double darkgray ;
+  margin-top: 5%;
+  color: white;
+  margin-right: 50px;
+  padding: 2%;
+/* Styling for displaying the other detail title*/
+}
+detail_title{
+  color:rgba(245, 245, 245, 0.774);
+  font-weight: bold;
+  font-size: 25px;
+  display: block;
+  margin-top: 2px;
+  border: 5px solid #1f2230 ;
+  background-color:#1f2230 ;
+}
+
+/* Styling for displaying the manufacture */
+manufacture{
+  font-size: 16px;
+  font-weight: bold;
+  display: block;
+  margin-top: 25px;
+/* Displays "Manufacture: " before the contents of the manufacture tag */
+}
+manufacture::before {
+    content: "Manufacture: ";
+  }
+/* Styling to display the color of the vehicle */
+color {
+  font-size: 16px;
+  font-weight: bold;
+  display: block;
+  margin-top: 8px;
+/* Displays "Color: " before the contnents of the color tag */
+}
+color::before {
+    content: "Color: ";
+  }
+/* Styling for displaying the dimension */
+dimension {
+    color: white;
+    font-size: 16px;
+    display: inline-block;
+    margin-top: -6%;
+    margin-left: 59%;
+    font-weight: bold;
+}
+/* Styling for displaying the values of the dimensions */
+value {
+    display: list-item;
+    list-style: square;
+    font-weight: bold;
+    margin-left: 25px;
+}
+/* Displays the attribute contents after displaying the content of the value tags */
+value::after{content: " (" attr(dim_type) ")";}
+/* Styling for displaying the price */
+price {
+    color: white;
+    text-align: center;
+    font-size: 110%;
+    display: block;
+    margin-top: 25px;
+    font-weight: bold;
+    padding-top: 2%;
+    padding:20px;
+    border: 2px double whitesmoke;
+    margin-right: 5%;
+    border-radius: 5%;
+    background-color: #7e25a7;
+    float: left;
+  
+/* Displays "Price: " before displaying the contents of the price tag  */
+}
+price::before {
+    content: "Price: ";
+  }
+
+
+
+  /* Shop info section css styles*/
+  /* Styling for displaying the shops informations */
+shop_info {
+    background-color: #252729;
+    display: block;
+    padding-top: 5%;
+    padding-left: 5%;
+    padding-bottom: 5%;
+    margin: 50px;
+  }
+  /* Styling for displaying the shop name */
+  shop_name {
+    color: red;
+    font-weight: bold;
+    font-size: 65px;
+    display: inline;
+  }
+  /* Styling for displaying the description of shop */
+  shop_description {
+      color: white;
+      font-size: 150%;
+      display: block;
+      margin-top: 1%;
+      margin-bottom: 1%;
+      
+  }
+  /* Styling for displaying the shop address */
+  shop_address {
+      color: rgba(245, 245, 245, 0.774);
+      font-size: 110%;
+      display: block;
+  }
+  /* Displays "Address: " before displaying the contents of the shop_address tag */
+  shop_address::before {
+    content: "Address: ";
+  }
+  /* Styling for displaying the phone number */
+  phone {
+      color: rgba(245, 245, 245, 0.774);
+      font-size: 110%;
+      display: block;
+  }
+  /* Displays "Phone " and the attribute content of the phone tag before displaying its content */
+  phone::before {content: "Phone " "("attr(type) ")" ": ";}
+  /* Styling for displaying the url of the shops website */
+  url {
+      color: rgba(245, 245, 245, 0.774);
+      font-size: 105%;
+      font-weight: bold;
+      display: block;
+  }
+  

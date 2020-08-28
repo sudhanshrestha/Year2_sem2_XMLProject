@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href="catalog_18029803.css"?>
+<!-- Creating a xml site for used vehicle shop -->
+<auto_dealers xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:noNamespaceSchemaLocation="catalog_18029803.xsd">
+	<logo></logo>
+	<!-- Vehicles information are stored within vehicles -->
+	<vehicles>
+		<!-- Information about each vehicle is contained within vehvicle tag-->
+		<vehicle>
+			<!-- Contains brand information and its plate id-->
+			<brand plate_id="MKZ8654">Kia</brand>
+			<!-- Contains name of the vehicles, its type and kilometers ran by it-->
+			<name type="SUV" kilometers="33,000">Kia e-Niro 64kWh</name>
+			<!-- Item number is  a unique number for each vechile-->
+			<item_number>C01</item_number>
+			<!-- quantity information for the vehicle-->
+			<quantity>2</quantity>
+			<!-- Holds image of the car-->
+			<car_img id="c01"></car_img>
+			<!-- Detailed description of the vehicle-->
+			<description><![CDATA[The Kia e-Niro marks a new, exciting chapter of electric mobility.It adds heaps of style and excitement to eco-friendly driving. Offering a 455km
+				range and fast-charging abilities, it marks a major step in electric powertrain technology.As a true crossover, it pairs advanced technology and comfort with a spacious
+				451-litre boot. The e-Niro comes with many individual touches, starting with the aerodynamic, closed front grille featuring a striking diamond pattern and an integrated
+				charging socket. The striking arrow-shaped Daytime Running Lights, as well as the bumpers and the 17" alloy wheels, also feature a unique e-Niro design.]]></description>
+			<!-- COntains information related to vehicles enigine-->
+			<engine>
+				<engine_title>ENGINE</engine_title>
+				<car_type>Electric</car_type>
+				<engine_type>Synchroonmotor/Permanente magneet</engine_type>
+				<power unit="kW">150</power>
+				<number_of_engine>1</number_of_engine>
+				<battery_type>Lithium_ion</battery_type>
+				<power_consumption>h/100km</power_consumption>
+			</engine>
+			<!-- Contains information related to vehicles performance-->
+			<performance>
+				<performance_title>PERFORMANCE</performance_title>
+				<transmission speed="6">Auto</transmission>
+				<top_speed unit="km/h">167</top_speed>
+				<acceleration in="0-100 km/h" unit="sec">7.8</acceleration>
+				<energy_label>A</energy_label>
+			</performance>
+			<!-- Contains additional information related to vehicle -->
+			<other_detail>
+				<detail_title>OTHERS DETAILS</detail_title>
+				<manufacture>2019</manufacture>
+				<color>White Pearl</color>
+				<dimension>Dimension:
+					<value dim_type="Length">4375 mm</value>
+					<value dim_type="Width">1805 mm</value>
+					<value dim_type="Height">1570 mm</value>
+				</dimension>
+			</other_detail>
+			<!-- Price information-->
+			<price>$ 32,364</price>
+		</vehicle>
+		<vehicle>
+			<brand plate_id="LOS6654">Mazda</brand>
+			<name type="Hatchback" kilometers="26,000">Mazda 3 SkyActiv-G 2.0</name>
+			<item_number>C02</item_number>
+			<quantity>5</quantity>
+			<car_img id="c02"></car_img>
+			<description><![CDATA[The Skyactiv-G or formerly Sky-G is a family of direct injection petrol engines. The engine compression ratio is increased to
+				14.0:1 To reduce the risk of engine knock at high compression, residual gas is reduced by using 4-2-1 engine exhaust systems, implementing a piston cavity, and optimizing fuel injection.]]></description>
+			<engine>
+				<engine_title>ENGINE</engine_title>
+				<car_type>Petrol</car_type>
+				<cylinder_no cylinder_type="in-line">4</cylinder_no>
+				<cylinder_capacity unit="cc">1998</cylinder_capacity>
+				<turbo available="No">No</turbo>
+				<catalyst>regular</catalyst>
+				<tank unit="l">51</tank>
+			</engine>
+			<performance>
+				<performance_title>PERFORMANCE</performance_title>
+				<transmission speed="6">Manual</transmission>
+				<top_speed unit="km/h">197</top_speed>
+				<acceleration in="0-100 km/h" unit="sec">10.4</acceleration>
+				<energy_label>C</energy_label>
+			</performance>
+			<other_detail>
+				<detail_title>OTHERS DETAILS</detail_title>
+				<manufacture>2019</manufacture>
+				<color>Machine Grey Metallic.</color>
+				<dimension>Dimension:
+					<value dim_type="Length">4460 mm</value>
+					<value dim_type="Width">1795 mm</value>
+					<value dim_type="Height">1435 mm</value>
+				</dimension>
+			</other_detail>
+			<price>$15,000</price>
+		</vehicle>
+		<vehicle>
+			<brand plate_id="LOS9544">Audi</brand>
+			<name type="Convertible" kilometers="16,000">Audi TT Roadster 40 TFSI</name>
+			<item_number>C03</item_number>
+			<quantity>3</quantity>
+			<car_img id="c03"></car_img>
+			<description><![CDATA[The  Audi Tt Roadster 40 TFSI Sport 2dr S Tronic sports a number of great features and technical specs.
+				This includes a fuel economy of 44.8 MPG combined and 143 g/km CO2 emissions from the 4 cylinder, 1984 CC engine with a 7 speed gear box.
+				This produces 197 BHP with a top speed of 153 MPH and a 0 to 62 time of 6.9 seconds. The car fits into insurance group 38E.]]></description>
+			<engine>
+				<engine_title>ENGINE</engine_title>
+				<car_type>Petrol</car_type>
+				<cylinder_no cylinder_type="in line">4</cylinder_no>
+				<cylinder_capacity unit="cc">1994</cylinder_capacity>
+				<turbo available="Yes">yes, with intercoller</turbo>
+				<catalyst>regular</catalyst>
+				<tank unit="l">50</tank>
+			</engine>
+			<performance>
+				<performance_title>PERFORMANCE</performance_title>
+				<transmission speed="6">Manual</transmission>
+				<top_speed unit="km/h">247</top_speed>
+				<acceleration in="0-100 km/h" unit="sec">6.4</acceleration>
+				<energy_label>E</energy_label>
+			</performance>
+			<other_detail>
+				<detail_title>OTHERS DETAILS</detail_title>
+				<manufacture>2019</manufacture>
+				<color>Blue Peral</color>
+				<dimension>Dimension:
+					<value dim_type="Length">4191 mm</value>
+					<value dim_type="Width">1832 mm</value>
+					<value dim_type="Height">1355 mm</value>
+				</dimension>
+			</other_detail>
+			<price>$6,500</price>
+		</vehicle>
+		<vehicle>
+			<brand>BMW</brand>
+			<name type="Sedan" kilometers="10,000">BMW 330d</name>
+			<item_number>C04</item_number>
+			<quantity>3</quantity>
+			<car_img id="c04"></car_img>
+			<description><![CDATA[The tested M Sport version of the premium German marque's 3 Series is a full-fat four-seat saloon powerhouse, packed with the latest hi-tech 
+				communication and infotainment wizardry, but still capable of delivering impressive economy figures of nearly 50mpg.
+				It offers peerless handling and cutting-edge safety equipment to mitigate, where necessary, the power the engine generates. The 265hp delivers a
+				huge 580Nm of torque and propels the car to 62mph in 5.5 seconds.]]></description>
+			<engine>
+				<engine_title>ENGINE</engine_title>
+				<car_type>Disel</car_type>
+				<cylinder_no cylinder_type="in line">6</cylinder_no>
+				<cylinder_capacity unit="cc">2993</cylinder_capacity>
+				<turbo available="Yes">yes, with intercoller</turbo>
+				<catalyst>particle filter</catalyst>
+				<tank unit="l">59</tank>
+			</engine>
+			<performance>
+				<performance_title>PERFORMANCE</performance_title>
+				<transmission speed="5">Manual</transmission>
+				<top_speed unit="km/h">250</top_speed>
+				<acceleration in="0-100 km/h" unit="sec">5.5</acceleration>
+				<energy_label>F</energy_label>
+			</performance>
+			<other_detail>
+				<detail_title>OTHERS DETAILS</detail_title>
+				<manufacture>2019</manufacture>
+				<color>Mineral Grey</color>
+				<dimension>Dimension:
+					<value dim_type="Length">4633 mm</value>
+					<value dim_type="Width">2031 mm</value>
+					<value dim_type="Height">1429 mm</value>
+				</dimension>
+			</other_detail>
+			<price>$11,500</price>
+		</vehicle>
+		<vehicle>
+			<brand>Porshe</brand>
+			<name type="Coupe" kilometers="18,000">Porshe 911 Carrera S Coupe</name>
+			<item_number>C05</item_number>
+			<quantity>1</quantity>
+			<car_img id="c05"></car_img>
+			<description><![CDATA[The 2019 Porsche 911 is a sports car that's available in many different versions. Understanding the differences in engines, wheel sizes, body widths,
+				and interior options can be dizzying. But no matter which model you choose,
+				all 911s have the same intrinsic qualities such as two doors, a rear-mounted flat-six engine, the ignition switch on the left, and an analog tachometer
+				sitting front and center. These qualities have made the 911 into perhaps the most iconic sports car on the planet.]]></description>
+			<engine>
+				<engine_title>ENGINE</engine_title>
+				<car_type>Petrol</car_type>
+				<cylinder_no cylinder_type="boxer">6</cylinder_no>
+				<cylinder_capacity unit="cc">2981</cylinder_capacity>
+				<turbo available="Yes">yes, two</turbo>
+				<catalyst>regular</catalyst>
+				<tank unit="l">61</tank>
+			</engine>
+			<performance>
+				<performance_title>PERFORMANCE</performance_title>
+				<transmission speed="6">Automatic</transmission>
+				<top_speed unit="km/h">308</top_speed>
+				<acceleration in="0-100 km/h" unit="sec">3.7</acceleration>
+				<energy_label>G</energy_label>
+			</performance>
+			<other_detail>
+				<detail_title>OTHERS DETAILS</detail_title>
+				<manufacture>2019</manufacture>
+				<color>Night Blue Metallic</color>
+				<dimension>Dimension:
+					<value dim_type="Length">4499 mm</value>
+					<value dim_type="Width">1808 mm</value>
+					<value dim_type="Height">1291 mm</value>
+				</dimension>
+			</other_detail>
+			<price>$107,898</price>
+		</vehicle>
+	</vehicles>
+	<!-- Information for the shop -->
+	<shop_info>
+		<!-- Contains shop name-->
+		<shop_name>Auto Dealers</shop_name>
+		<!-- Contains some description about the shop-->
+		<shop_description>The best online market for buying and selling second-hand cars.We provide the best deal you can get.</shop_description>
+		<!-- Contains shop address-->
+		<shop_address>Khushibu,Kathmandu</shop_address>
+		<!-- Contains the primary and seconday phone number of the shop-->
+		<phone type="primary">01-5559227</phone>
+		<phone type="seconday">9841564859</phone>
+		<!-- URL to the shops website-->
+		<url>www.auto-dealers.com</url>
+	</shop_info>
+</auto_dealers>

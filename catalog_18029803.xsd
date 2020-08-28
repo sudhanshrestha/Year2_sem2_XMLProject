@@ -1,0 +1,323 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+<!-- Schema for the root tag -->
+<xs:element name="auto_dealers">
+    <xs:complexType>
+        <xs:sequence>
+            <xs:element name="logo" type="xs:string" minOccurs="1" maxOccurs="1"/>
+            <xs:element ref="vehicles" minOccurs="1" maxOccurs="1"/>
+            <xs:element ref="shop_info" minOccurs="1" maxOccurs="1"/>
+        </xs:sequence>
+    </xs:complexType>
+</xs:element>
+<!-- Schema for the vehicles tag-->
+<xs:element name="vehicles"> 
+    <xs:complexType>
+        <xs:sequence>
+            <xs:element ref="vehicle" minOccurs="1" maxOccurs="unbounded" />
+        </xs:sequence>
+    </xs:complexType>
+</xs:element>
+<!-- Schema for the vehicle tag-->
+<xs:element name="vehicle">
+    <xs:complexType>
+        <xs:sequence>
+            <xs:element ref="brand" minOccurs="1" maxOccurs="1"/>
+            <xs:element ref="name" minOccurs="1" maxOccurs="1"/>
+            <xs:element ref="item_number" minOccurs="1" maxOccurs="1"/>
+            <xs:element ref="quantity" minOccurs="1" maxOccurs="1"/>
+            <xs:element ref="car_img" minOccurs="1" maxOccurs="1"/>
+            <xs:element ref="description" minOccurs="1" maxOccurs="1"/>
+            <xs:element ref="engine" minOccurs="1" maxOccurs="1"/>
+            <xs:element ref="performance" minOccurs="1" maxOccurs="1"/>
+            <xs:element ref="other_detail" minOccurs="1" maxOccurs="1"/>
+            <xs:element ref="price" minOccurs="1" maxOccurs="1"/>
+        </xs:sequence>
+    </xs:complexType>
+</xs:element>
+<!-- Schema for the brand tag-->
+<xs:element name="brand">
+    <xs:complexType>
+        <xs:simpleContent> 
+            <xs:extension base="xs:string">
+                <xs:attribute name="plate_id" use="optional"></xs:attribute>
+            </xs:extension>
+        </xs:simpleContent>
+    </xs:complexType>
+</xs:element>
+<!-- Schema for the name tag-->
+<xs:element name="name">
+    <xs:complexType>
+        <xs:simpleContent>
+            <xs:extension base="xs:string">
+                <xs:attribute name="type" use="required"/>
+                <xs:attribute name="kilometers" use="required"/>
+            </xs:extension>
+        </xs:simpleContent>
+    </xs:complexType>
+</xs:element>
+<!-- Schema for the item_number tag-->
+<xs:element name="item_number">
+  <xs:simpleType>
+    <xs:restriction base="xs:string">
+      <xs:pattern value="[A-Z][0-9][0-9]"/>
+    </xs:restriction>
+  </xs:simpleType>
+</xs:element>
+<!-- Schema for the quantity tag-->
+<xs:element name="quantity">
+  <xs:simpleType>
+    <xs:restriction base="xs:integer">
+      <xs:minInclusive value="0"/>
+      <xs:maxInclusive value="50"/>
+    </xs:restriction>
+  </xs:simpleType>
+</xs:element>
+<!-- Schema for the car_img tag-->
+<xs:element name="car_img">
+    <xs:complexType>
+        <xs:simpleContent>
+            <xs:extension base="xs:string">
+                <xs:attribute name="id" use="required"></xs:attribute>
+            </xs:extension>
+        </xs:simpleContent>
+    </xs:complexType>
+</xs:element>
+<!-- Schema for the description tag-->
+<xs:element name="description" type="xs:string"/>
+<!-- Schema for the engine tag-->
+<xs:element name="engine">
+    <xs:complexType>
+        <xs:all>
+            <xs:element ref="engine_title" minOccurs="1" maxOccurs="1"/>
+            <xs:element ref="car_type" minOccurs="1" maxOccurs="1"/>
+            <xs:element ref="engine_type" minOccurs="0" maxOccurs="1"/>
+            <xs:element ref="power" minOccurs="0" maxOccurs="1"/>
+            <xs:element ref="number_of_engine" minOccurs="0" maxOccurs="1"/>
+            <xs:element ref="battery_type" minOccurs="0" maxOccurs="1"/>
+            <xs:element ref="power_consumption" minOccurs="0" maxOccurs="1"/>
+            <xs:element ref="cylinder_no" minOccurs="0" maxOccurs="1"/>
+            <xs:element ref="cylinder_capacity" minOccurs="0" maxOccurs="1"/>
+            <xs:element ref="turbo" minOccurs="0" maxOccurs="1"/>
+            <xs:element ref="catalyst" minOccurs="0" maxOccurs="1"/>
+            <xs:element ref="tank" minOccurs="0" maxOccurs="1"/>
+        </xs:all>
+    </xs:complexType>
+</xs:element>
+<!-- Schema for the engine_title tag-->
+<xs:element name="engine_title">
+  <xs:simpleType>
+    <xs:restriction base="xs:string">
+      <xs:pattern value="[A-Z]*"/>
+    </xs:restriction>
+  </xs:simpleType>
+</xs:element>
+
+
+<!-- Schema for the car_type tag-->
+<xs:element name="car_type">
+  <xs:simpleType>
+    <xs:restriction base="xs:string">
+      <xs:pattern value="[A-Za-z]*"/>
+    </xs:restriction>
+  </xs:simpleType>
+</xs:element>
+<!-- Schema for the engine_type tag-->
+<xs:element name="engine_type" type="xs:string"/>
+<!-- Schema for the power tag-->
+<xs:element name="power">
+    <xs:complexType>
+        <xs:simpleContent>
+            <xs:extension base="xs:string">
+                <xs:attribute name="unit" use="required"/>
+            </xs:extension>
+        </xs:simpleContent>
+    </xs:complexType>
+</xs:element>
+<!-- Schema for the number_of_engine tag-->
+<xs:element name="number_of_engine">
+  <xs:simpleType>
+    <xs:restriction base="xs:integer">
+      <xs:pattern value="[0-9]"/>
+    </xs:restriction>
+  </xs:simpleType>
+</xs:element>
+<!-- Schema for the battery_type tag-->
+<xs:element name="battery_type" type="xs:string"/>
+<!-- Schema for the power_consumption tag-->
+<xs:element name="power_consumption" type="xs:string"/>
+<!-- Schema for the cylinder_no tag-->
+<xs:element name="cylinder_no">
+    <xs:complexType>
+        <xs:simpleContent>
+            <xs:extension base="xs:string">
+                <xs:attribute name="cylinder_type" use="required"/>
+            </xs:extension>
+        </xs:simpleContent>
+    </xs:complexType>
+</xs:element>
+<!-- Schema for the cylinder_capacity tag-->
+<xs:element name="cylinder_capacity">
+    <xs:complexType>
+        <xs:simpleContent>
+            <xs:extension base="xs:string">
+                <xs:attribute name="unit" use="required"/>
+            </xs:extension>
+        </xs:simpleContent>
+    </xs:complexType>
+</xs:element>
+<!-- Schema for the turbo tag-->
+<xs:element name="turbo">
+    <xs:complexType>
+        <xs:simpleContent>
+            <xs:extension base="xs:string">
+                <xs:attribute name="available" use="optional"/>
+            </xs:extension>
+        </xs:simpleContent>
+    </xs:complexType>
+</xs:element>
+<!-- Schema for the catalyst tag-->
+<xs:element name="catalyst" type="xs:string"/>
+<!-- Schema for the tank tag-->
+<xs:element name="tank">
+    <xs:complexType>
+        <xs:simpleContent>
+            <xs:extension base="xs:string">
+                <xs:attribute name="unit" use="required"/>
+            </xs:extension>
+        </xs:simpleContent>
+    </xs:complexType>
+</xs:element>
+<!-- Schema for the performance tag-->
+<xs:element name="performance">
+    <xs:complexType>
+        <xs:sequence>
+            <xs:element ref="performance_title" minOccurs="1" maxOccurs="1"/>
+            <xs:element ref="transmission" minOccurs="1" maxOccurs="1"/>
+            <xs:element ref="top_speed" minOccurs="1" maxOccurs="1"/>
+            <xs:element ref="acceleration" minOccurs="1" maxOccurs="1"/>
+            <xs:element ref="energy_label" minOccurs="1" maxOccurs="1"/>
+        </xs:sequence>
+    </xs:complexType>
+</xs:element>
+<!-- Schema for the performance_title tag-->
+<xs:element name="performance_title">
+  <xs:simpleType>
+    <xs:restriction base="xs:string">
+      <xs:pattern value="[A-Z]*"/>
+    </xs:restriction>
+  </xs:simpleType>
+</xs:element>
+<!-- Schema for the transmission tag-->
+<xs:element name="transmission">
+    <xs:complexType>
+        <xs:simpleContent>
+            <xs:extension base="xs:string">
+                <xs:attribute name="speed" use="optional"/>
+            </xs:extension>
+        </xs:simpleContent>
+    </xs:complexType>
+</xs:element>
+<!-- Schema for the top_speed tag-->
+<xs:element name="top_speed">
+    <xs:complexType>
+        <xs:simpleContent>
+            <xs:extension base="xs:string">
+                <xs:attribute name="unit" use="required"/>
+            </xs:extension>
+        </xs:simpleContent>
+    </xs:complexType>
+</xs:element>
+<!-- Schema for the acceleration tag-->
+<xs:element name="acceleration">
+    <xs:complexType>
+        <xs:simpleContent>
+            <xs:extension base="xs:string">
+                <xs:attribute name="in" use="optional"/>
+                <xs:attribute name="unit" use="required"/>
+            </xs:extension>
+        </xs:simpleContent>
+    </xs:complexType>
+</xs:element>
+<!-- Schema for the energy_label tag-->
+<xs:element name="energy_label">
+  <xs:simpleType>
+    <xs:restriction base="xs:string">
+      <xs:pattern value="[A-H]"/>
+    </xs:restriction>
+  </xs:simpleType>
+</xs:element>
+<!-- Schema for the other_detail tag-->
+<xs:element name="other_detail">
+    <xs:complexType>
+        <xs:sequence>
+            <xs:element ref="detail_title" minOccurs="1" maxOccurs="1" />
+            <xs:element ref="manufacture" minOccurs="1" maxOccurs="1" />
+            <xs:element ref="color" minOccurs="1" maxOccurs="1" />
+            <xs:element ref="dimension" minOccurs="1" maxOccurs="1" />
+        </xs:sequence>
+    </xs:complexType>
+</xs:element>
+<!-- Schema for the detail_title tag-->
+<xs:element name="detail_title" type="xs:string"/>
+<!-- Schema for the manufacture tag-->
+<xs:element name="manufacture">
+<xs:simpleType>
+  <xs:restriction base="xs:integer">
+    <xs:pattern value="[0-9][0-9][0-9][0-9]"/>
+  </xs:restriction>
+</xs:simpleType>
+</xs:element> 
+<!-- Schema for the color tag-->
+<xs:element name="color" type="xs:string"/>
+<!-- Schema for the dimension tag-->
+<xs:element name="dimension">
+    <xs:complexType mixed="true">
+        <xs:sequence>
+            <xs:element ref="value" minOccurs="1" maxOccurs="4"/>
+        </xs:sequence>
+    </xs:complexType>
+</xs:element>
+<!-- Schema for the value tag-->
+<xs:element name="value">
+    <xs:complexType>
+        <xs:simpleContent>
+            <xs:extension base="xs:string">
+                <xs:attribute name="dim_type" use="required" />
+            </xs:extension>
+        </xs:simpleContent>
+    </xs:complexType>
+</xs:element>
+<!-- Schema for the price tag-->
+<xs:element name="price" type="xs:string"/>
+<!-- Schema for the shop_info tag-->
+<xs:element name="shop_info">
+    <xs:complexType>
+        <xs:sequence>
+            <xs:element ref="shop_name" minOccurs="1" maxOccurs="1" />
+            <xs:element ref="shop_description" minOccurs="1" maxOccurs="1" />
+            <xs:element ref="shop_address" minOccurs="1" maxOccurs="1" />
+            <xs:element ref="phone" minOccurs="1" maxOccurs="4" />
+            <xs:element ref="url" minOccurs="1" maxOccurs="1" />
+        </xs:sequence>
+    </xs:complexType>
+</xs:element>
+<!-- Schema for the shop_name tag-->
+<xs:element name="shop_name" type="xs:string"/>
+<!-- Schema for the shop_description tag-->
+<xs:element name="shop_description" type="xs:string"/>
+<!-- Schema for the shop_address tag-->
+<xs:element name="shop_address" type="xs:string"/>
+<!-- Schema for the phone tag-->
+<xs:element name="phone"> 
+<xs:complexType>
+    <xs:simpleContent>
+        <xs:extension base="xs:string">
+            <xs:attribute name="type" use="optional"/>
+        </xs:extension>
+    </xs:simpleContent>
+</xs:complexType>
+</xs:element>
+<!-- Schema for the url tag-->
+<xs:element name="url" type="xs:string"/>
+</xs:schema>
